@@ -5,7 +5,7 @@ export default function HeroSection() {
         <div className="z-10 flex-1 text-white">
           <h1 className="mb-8 text-7xl font-bold text-white">
             Não deixe para depois, <br /> comece a cuidar de você{" "}
-            <span className="text-green-400">agora!</span>
+            <span className="text-red-500">agora!</span>
           </h1>
           <p className="mb-8 max-w-md text-2xl font-light">
             Venha conhecer nossa academia e descubra como alcançar seus

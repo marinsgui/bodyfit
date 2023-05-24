@@ -10,7 +10,7 @@ export default function Header() {
 
       <div className="flex gap-10">
         <button className="font-bold hover:brightness-90">ENTRAR</button>
-        <button className="bg-green-400 p-3 font-bold hover:brightness-90">
+        <button className="bg-red-500 p-3 font-bold hover:brightness-90">
           CRIAR CONTA
         </button>
       </div>
