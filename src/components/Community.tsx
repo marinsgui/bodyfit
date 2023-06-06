@@ -1,12 +1,13 @@
-import {
-  RiMessage2Line,
-  RiArrowLeftCircleFill,
-  RiArrowRightCircleFill,
-} from "react-icons/ri";
+import { RiMessage2Line } from "react-icons/ri";
 
 import girlBoxing from "../assets/girl-boxing.jpg";
 import manGym from "../assets/man-gym.jpg";
 import girlWorkingOut from "../assets/girl-working-out.jpg";
+import manBar from "../assets/man-bar.jpg";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
 
 export default function Community() {
   const images = [
@@ -25,8 +26,14 @@ export default function Community() {
     {
       url: girlWorkingOut,
       id: 3,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non provident sit explicabo dolorum?",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis non provident sit explicabo dolorum.",
       name: "Laura M.",
+    },
+    {
+      url: manBar,
+      id: 4,
+      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptatem accusantium, necessitatibus magnam.",
+      name: "Hugo P.",
     },
   ];
 
@@ -41,19 +48,11 @@ export default function Community() {
           />
           Comunidade
         </h2>
-        <div className="flex gap-7 self-start">
-          <button>
-            <RiArrowLeftCircleFill size={45} color="#13131634" />
-          </button>
-          <button>
-            <RiArrowRightCircleFill size={45} />
-          </button>
-        </div>
       </div>
 
-      <div className="flex gap-7">
+      <Swiper slidesPerView={3.5} spaceBetween={30} grabCursor={true}>
         {images.map((image) => (
-          <div className="relative flex items-center justify-center">
+          <SwiperSlide className="relative flex items-center justify-center">
             <img
               src={image.url}
               alt={image.url}
@@ -66,9 +65,9 @@ export default function Community() {
             <p className="absolute bottom-10 text-xl font-bold text-white">
               <span className="text-red-500">~</span> {image.name}
             </p>
-          </div>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </section>
   );
 }
