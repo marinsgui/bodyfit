@@ -50,7 +50,14 @@ export default function Community() {
         </h2>
       </div>
 
-      <Swiper slidesPerView={3.5} spaceBetween={30} grabCursor={true}>
+      <Swiper
+        slidesPerView={3.5}
+        spaceBetween={30}
+        grabCursor={true}
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         {images.map((image) => (
           <SwiperSlide className="relative flex items-center justify-center">
             <img

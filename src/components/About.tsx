@@ -3,7 +3,12 @@ import { Users2, ArrowRightCircle } from "lucide-react";
 export default function About() {
   return (
     <section className="flex items-center justify-center py-32">
-      <div className="relative flex h-1/3 w-2/5 flex-col gap-8">
+      <div
+        className="relative flex h-1/3 w-2/5 flex-col gap-8"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <Users2
           size={100}
           color="#1313160D"

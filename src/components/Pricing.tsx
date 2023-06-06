@@ -68,7 +68,12 @@ export default function Pricing() {
       />
       <h2 className="text-center text-6xl font-bold">Planos e preços</h2>
 
-      <div className="flex items-center justify-center gap-8 py-16">
+      <div
+        className="flex items-center justify-center gap-8 py-16"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="flex h-[500px] w-[350px] flex-col items-center justify-center gap-5 bg-gray-200">
           <h3 className="bg-black px-2 py-1 font-semibold text-white">
             Básico

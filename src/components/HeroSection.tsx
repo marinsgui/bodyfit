@@ -1,7 +1,12 @@
 export default function HeroSection() {
   return (
     <section className="h-screen bg-neutral-900">
-      <div className="relative mx-auto flex h-full w-2/3 items-center -space-x-48">
+      <div
+        className="relative mx-auto flex h-full w-2/3 items-center -space-x-48"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="z-10 flex-1 text-white">
           <h1 className="mb-8 text-7xl font-bold text-white">
             Não deixe para depois, <br /> comece a cuidar de você{" "}

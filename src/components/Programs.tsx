@@ -25,7 +25,12 @@ export default function Programs() {
 
   return (
     <section>
-      <div className="relative h-1/3">
+      <div
+        className="relative h-1/3"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <Calendar
           size={100}
           color="#1313160D"
