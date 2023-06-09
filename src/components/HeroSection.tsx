@@ -1,6 +1,8 @@
+import { Element } from 'react-scroll'
+
 export default function HeroSection() {
   return (
-    <section className="h-screen bg-neutral-900">
+    <Element name='Inicial' className="h-screen bg-neutral-900">
       <div
         className="relative mx-auto flex h-full w-2/3 items-center -space-x-48"
         data-aos="fade-right"
@@ -24,6 +26,6 @@ export default function HeroSection() {
           className={`h-full w-full flex-1 bg-[url('./assets/girl-gym.jpg')] bg-cover bg-right bg-no-repeat`}
         ></div>
       </div>
-    </section>
+    </Element>
   );
 }

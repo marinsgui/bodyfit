@@ -1,3 +1,5 @@
+import { Element } from "react-scroll";
+
 import { Calendar } from "lucide-react";
 
 import boxing from "../assets/boxing.png";
@@ -24,7 +26,7 @@ export default function Programs() {
   ];
 
   return (
-    <section>
+    <Element name="Exercicios">
       <div
         className="relative h-1/3"
         data-aos="fade-right"
@@ -50,6 +52,6 @@ export default function Programs() {
           ))}
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

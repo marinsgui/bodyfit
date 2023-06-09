@@ -5,6 +5,8 @@ import Typography from "@mui/material/Typography";
 import { ChevronDown } from "lucide-react";
 import { FaQuestion } from "react-icons/fa";
 
+import { Element } from "react-scroll";
+
 export default function Faq() {
   const questions = [
     {
@@ -30,7 +32,7 @@ export default function Faq() {
   ];
 
   return (
-    <section className="relative mx-auto my-48 w-1/3">
+    <Element name='FAQ' className="relative mx-auto my-48 w-1/3">
       <div
         data-aos="fade-right"
         data-aos-offset="300"
@@ -61,6 +63,6 @@ export default function Faq() {
           </Accordion>
         ))}
       </div>
-    </section>
+    </Element>
   );
 }

@@ -6,6 +6,7 @@ import girlWorkingOut from "../assets/girl-working-out.jpg";
 import manBar from "../assets/man-bar.jpg";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Element } from "react-scroll";
 
 import "swiper/css";
 
@@ -38,7 +39,7 @@ export default function Community() {
   ];
 
   return (
-    <section className="flex justify-between my-10">
+    <Element name="Comunidade" className="flex justify-between my-10">
       <div className="relative flex flex-col items-center justify-between px-10">
         <h2 className="text-center text-6xl font-bold">
           <RiMessage2Line
@@ -75,6 +76,6 @@ export default function Community() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </Element>
   );
 }

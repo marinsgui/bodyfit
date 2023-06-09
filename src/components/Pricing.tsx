@@ -1,6 +1,8 @@
 import { FaCheckCircle } from "react-icons/fa";
 import { Tag } from "lucide-react";
 
+import { Element } from "react-scroll";
+
 export default function Pricing() {
   const basicItems = [
     {
@@ -60,7 +62,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="relative mt-24 flex flex-col items-center justify-center">
+    <Element name="Preços" className="relative mt-24 flex flex-col items-center justify-center">
       <Tag
         size={100}
         color="#1313160D"
@@ -135,6 +137,6 @@ export default function Pricing() {
           </button>
         </div>
       </div>
-    </section>
+    </Element>
   );
 }

@@ -1,8 +1,10 @@
 import { Users2, ArrowRightCircle } from "lucide-react";
 
+import { Element } from 'react-scroll'
+
 export default function About() {
   return (
-    <section className="flex items-center justify-center py-32">
+    <Element name='Sobre' className="flex items-center justify-center py-32">
       <div
         className="relative flex h-1/3 w-2/5 flex-col gap-8"
         data-aos="fade-right"
@@ -28,6 +30,6 @@ export default function About() {
           FAÇA SUA MATRÍCULA <ArrowRightCircle />
         </button>
       </div>
-    </section>
+    </Element>
   );
 }
