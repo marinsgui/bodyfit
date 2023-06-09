@@ -6,6 +6,7 @@ import Pricing from "./components/Pricing";
 import Programs from "./components/Programs";
 import Faq from "./components/Faq";
 import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,6 +24,7 @@ function App() {
       <Community />
       <Faq />
       <CallToAction />
+      <Footer />
     </div>
   );
 }
