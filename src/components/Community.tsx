@@ -38,7 +38,7 @@ export default function Community() {
   ];
 
   return (
-    <section className="flex justify-between">
+    <section className="flex justify-between my-10">
       <div className="relative flex flex-col items-center justify-between px-10">
         <h2 className="text-center text-6xl font-bold">
           <RiMessage2Line
