@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import { ChevronDown } from "lucide-react";
 import { FaQuestion } from "react-icons/fa";
 
-export default function SimpleAccordion() {
+export default function Faq() {
   const questions = [
     {
       id: 1,
@@ -30,7 +30,7 @@ export default function SimpleAccordion() {
   ];
 
   return (
-    <section className="relative mx-auto my-20 w-1/3">
+    <section className="relative mx-auto my-48 w-1/3">
       <div
         data-aos="fade-right"
         data-aos-offset="300"
